@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<style>
+    table {
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-family: sans-serif;
+        font-size: 0.8em;
+        letter-spacing: 0.5px;
+    }
+    
+    caption {
+        caption-side: bottom;
+        padding: 10px;
+    }
+
+    thead, tfoot {
+        background-color: rgb(228 240 245);
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px 10px;
+    }
+
+    td:last-of-type {
+        text-align: center;
+    }
+
+    tbody th {
+        text-align: left;
+    }
+
+    tbody > tr:nth-of-type(even) {
+        background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+        text-align: right;
+    }
+
+    tfoot td {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <table>
+            <caption>A table example adapted from the <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table>MDN Web Docs</a></caption>
+            <thead>
+                <tr>
+                    <th scope=col>Show</th>
+                    <th scope=col>Air dates</th>
+                    <th scope=col>No. of seasons</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope=row>Community</th>
+                    <td>2009 - 2015</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th scope=row>Parks and Recreation</th>
+                    <td>2009 - 2015</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th scope=row>New Girl</th>
+                    <td>2011 - 2018</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th scope=row>Modern Family</th>
+                    <td>2009 - 2020</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th scope=row>Silicon Valley</th>
+                    <td>2014 - 2019</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th scope=row>Cougar Town</th>
+                    <td>2009 - 2015</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope=row colspan=2>Average no. of seasons</th>
+                    <td>7</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+</html>
